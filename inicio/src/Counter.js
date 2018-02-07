@@ -6,7 +6,7 @@ class Counter extends React.Component {
 		super(props);
 
 		this.handleDecrementClick = this.handleDecrementClick.bind(this);
-		this.handleIncrementClick = this.handleDecrementClick.bind(this);
+		this.handleIncrementClick = this.handleIncrementClick.bind(this);
 		
 		this.state = {
 			counter: props.initialCount
@@ -28,7 +28,7 @@ class Counter extends React.Component {
 			color: this.props.color
 		}
 
-		return(
+		return (
 			<div>
 				<button onClick={ this.handleDecrementClick }>-</button>
 				<span style={style}>A conta está em: {this.state.counter}</span>
